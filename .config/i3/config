@@ -8,12 +8,12 @@
 #keyboard language
 exec_always --no-startup-id  setxkbmap -layout tr
 #wallpaper
-exec --no-startup-id feh --bg-fill ~/Wallpapers/komut.png
+exec --no-startup-id feh --bg-fill ~/Wallpapers/acid.png
 exec xrdb /home/furkan/.Xresources
 set $mod Mod1
 
 #lockscreen
-bindsym $mod+shift+x exec betterlockscreen -l 
+bindsym $mod+shift+x exec betterlockscreen -l
 
 # Needed for i3-gaps
 for_window [class="^.*"] border pixel 2
@@ -47,7 +47,7 @@ bindsym Mod1+Shift+q kill
 bindsym Mod1+z exec xwinmosaic
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -theme arthur
+bindsym $mod+d exec rofi -combi-modi window#drun -show combi -modi combi -show-icons
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -187,8 +187,8 @@ bindsym Mod1+r mode "resize"
 #bar {
 #    status_command i3status
 #    position top
-#	font pango:Roboto Mono 11
-#	colors {
+#       font pango:Roboto Mono 11
+#       colors {
 #            background #1F2D3A
 #           statusline #1ABC9C
 #            separator #1ABC9C

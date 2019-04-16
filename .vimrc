@@ -9,5 +9,15 @@ set softtabstop=4   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
 
-syn on "sytanx
-set nu " line numeration
+syn on
+set nu
+
+call pathogen#infect()
+
+
+"Neocomplete
+let g:neocomplete#enable_at_startup = 1
+
+
+"NERDTreeToggle
+nmap <F8> :NERDTreeToggle<CR>
