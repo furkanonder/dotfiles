@@ -5,20 +5,19 @@
 # i3 config file (v4)
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-#keyboard language
-exec_always --no-startup-id  setxkbmap -layout tr
 #wallpaper
 exec --no-startup-id feh --bg-fill ~/Wallpapers/acid.png
-exec xrdb /home/furkan/.Xresources
 set $mod Mod1
 
 #lockscreen
 bindsym $mod+shift+x exec betterlockscreen -l
 
 # Needed for i3-gaps
-for_window [class="^.*"] border pixel 2
-gaps inner 5
+for_window [class="^.*"] border pixel 1
+gaps inner 7
+gaps outer 0
 smart_gaps on
+
 #Sound Settings
 bindsym $mod+x exec amixer -q sset Master 5%+
 bindsym $mod+c exec amixer -q sset Master 5%-
@@ -38,7 +37,7 @@ set $right semicolon
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod1+o exec i3-sensible-terminal
+bindsym Mod1+o exec termite
 
 # kill focused window
 bindsym Mod1+Shift+q kill
