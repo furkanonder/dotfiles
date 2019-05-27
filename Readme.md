@@ -1,3 +1,5 @@
+![](https://github.com/furkanonder/dotfiles/blob/master/dotfiles-screenshot.png)
+
 |Application|Package|
 |--------------|:--------:|
 |bar |  polybar |
@@ -7,6 +9,6 @@
 |Terminal Emulator | termite |
 |File Manager | ranger,nautilus |
 |Image Viewer | feh |
-|Screenshooter | deepin-screenshot |
+|Screenshooter | flameshot |
 |PDF Viewer | acroread |
 |X11 window switcher | xwinmosaic |
