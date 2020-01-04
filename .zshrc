@@ -67,6 +67,7 @@ plugins=(
         git
         execution-time
         zsh-autosuggestions
+        colored-man-pages
         )
 
 source $ZSH/oh-my-zsh.sh
