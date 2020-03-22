@@ -6,9 +6,10 @@
 |Shell prompt | zsh |
 |Launcher | rofi |
 |Music Player | ncmpcpp with mpd |
+|Sound Driver | alsa |
 |Terminal Emulator | termite |
 |File Manager | ranger,nautilus |
 |Image Viewer | feh |
 |Screenshooter | flameshot |
-|PDF Viewer | acroread |
+|PDF Viewer | atril |
 |X11 window switcher | xwinmosaic |
