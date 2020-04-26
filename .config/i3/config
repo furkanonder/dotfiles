@@ -17,7 +17,6 @@ set $mod Mod1
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:DejaVu Sans Mono 8
-
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -34,7 +33,7 @@ exec compton -b --config .config/compton/compton.conf
 # Flux
 exec fluxgui
 
-#Lockcreen
+# Lockcreen
 bindsym $mod+shift+x exec betterlockscreen -l
 
 # Needed for i3-gaps
@@ -43,9 +42,13 @@ gaps inner 7
 gaps outer 0
 smart_gaps on
 
-#Sound Settings
+# Sound Settings
 bindsym $mod+x exec amixer -q sset Master 5%+
 bindsym $mod+c exec amixer -q sset Master 5%-
+
+# Brightness Settings
+bindsym $mod+n exec light -A 5
+bindsym $mod+m exec light -U 5
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -61,9 +64,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# uxterm
+bindsym Mod1+u exec uxterm
+
+# termite
 bindsym $mod+Return exec termite
 bindsym Mod1+o exec termite
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
