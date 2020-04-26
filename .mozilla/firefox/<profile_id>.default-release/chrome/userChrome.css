@@ -1,0 +1,8 @@
+/* Override hiding of Bookmarks Toolbar in F11 full screen
+   when you roll down the tabs/main toolbar 
+   src: https://support.mozilla.org/en-US/questions/1212156?fpa=1
+   and https://www.userchrome.org/how-create-userchrome-css.html
+*/
+#navigator-toolbox[inFullscreen="true"] #PersonalToolbar {
+  visibility: unset !important;
+}
