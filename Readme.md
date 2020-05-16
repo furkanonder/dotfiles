@@ -2,7 +2,7 @@
 
 |Application       |Package         |
 |------------------|:--------------:|
-|bar               |polybar         |
+|Status bar        |polybar         |
 |Shell prompt      |zsh             |
 |Launcher          |rofi            |
 |Music Player      |ncmpcpp with mpd|
@@ -13,3 +13,4 @@
 |Screenshooter     |flameshot       |
 |PDF Viewer        |atril           |
 |Font              |ttf-dejavu      |
+|Text Editor/IDE   |spacevim        |
