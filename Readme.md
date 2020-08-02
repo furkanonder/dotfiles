@@ -13,4 +13,5 @@
 |Screenshooter     |flameshot       |
 |PDF Viewer        |atril           |
 |Font              |ttf-dejavu      |
-|Text Editor/IDE   |spacevim        |
+|Text Editor/IDE   |gvim/spacevim   |
+|Security          |linux-hardened  |
