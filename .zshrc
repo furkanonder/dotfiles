@@ -65,7 +65,7 @@ ZSH_THEME="alanpeabody"
 
 plugins=(
         git
-        execution-time
+        command-time
         zsh-autosuggestions
         colored-man-pages
         )
