@@ -42,6 +42,15 @@ gaps inner 7
 gaps outer 0
 smart_gaps on
 
+# Alternating layouts for i3
+exec --no-startup-id ~/.config/scripts/alternating_layouts.py
+
+# Screen Resolution
+exec --no-startup-id ~/.screenlayout/layout.sh
+
+# Assign Programs to Workspaces
+for_window [class="firefox"] move to workspace $ws2
+
 # Sound Settings
 bindsym $mod+x exec amixer -q sset Master 5%+
 bindsym $mod+c exec amixer -q sset Master 5%-
